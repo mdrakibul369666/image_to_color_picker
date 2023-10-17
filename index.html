@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>colorPiker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- file uploader section start -->
+   <section class="btns-container">
+    <div class="inputContainer">
+       <input type="file" class="Input-file" accesskey="image/*" />
+       <label for="file">Use your image</label>
+    </div> 
+    <div class="Ptext">
+       <p>We think data protection is important!<span class="no-data-is-sent">`No data is sent.`</span> The magic happens in your browser.</p>
+    </div>
+  </section>
+  <!-- file uploader section end -->
+
+      <section class="container">
+          <div class="text">
+             <h1>...pick your color online!</h1>
+          </div>
+        <!-- canvas section stard-->
+          <section class="canvasMain">
+             <canvas id="canvas" width="500px" height="400px"></canvas>
+          </section>
+          <!-- canvas section  end-->
+          <!-- result div is here -->
+          
+
+            
+              <div class="backgroundColors">
+                 <div id="color"></div>
+              </div>
+              
+            
+            
+         
+
+            <div class="">
+               <div class="status">
+                   <span class="HexText">Hex:</span>
+                   <span class="hexNumberandCharaters">#f79242</span>
+                   <button class="copyButton">Copy</button>
+               </div>
+           </div>
+           
+           <div class="">
+               <div class="status">
+                   <span class="HexText">RGB:</span>
+                   <span class="rgb_color_code">rgb(23,343,34)</span>
+                   <button class="copyButton">Copy</button>
+               </div>
+           </div>
+
+             
+           <div id="myProgress">
+            <h4>CMYK color code with parcentage</h4>
+            <div>
+               <h3>Cyan (C)</h3>
+             <div id="Cyan"></div>
+             <div id="parcentage_Cyan">0%</div>
+            </div>
+
+             <div>
+               <h3>Magenta (M)</h3>
+             <div id="Magenta"></div>
+             <div id="parcentage_Magenta">0%</div>
+             </div>
+
+             <div>
+               <h3>Yellow (Y)</h3>
+             <div id="Yellow"></div>
+             <div id="parcentage_Yellow">0%</div>
+             </div>
+
+             <div>
+               <h3>Key/Black (K)</h3>
+             <div id="Black"></div>
+             <div id="parcentage_Black">0%</div>
+             </div>
+
+           </div>
+
+             <div class="">
+               <div class="status">
+                   <span class="HexText">cmyk:</span>
+                   <span class="cmyk_color_code">cmyk(23% 34% 34% 4%)</span>
+                   <button class="copyButton">Copy</button>
+               </div>
+           </div>
+         
+           <div class="">
+            <div class="status">
+                <span class="HexText">HSL:</span>
+                <span class="hsl_color_code">(123,10%,34%)</span>
+                <button class="copyButton">Copy</button>
+            </div>
+        </div>
+         
+
+
+         
+         
+
+
+
+
+
+
+
+
+
+
+      
+
+  
+    <script src="main.js"></script>
+</body>
+</html>

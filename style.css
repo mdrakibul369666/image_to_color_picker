@@ -1,0 +1,264 @@
+/* global css here */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body css color */
+body{
+    background-color: #FAFAFA;
+}
+/* text div style is here */
+
+
+#myProgress {
+  width: 50%;
+  background-color: #ddd;
+}
+
+#Cyan {
+  width: 1%;
+  height: 10px;
+  background-color: #04AA6D;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+#Magenta{
+  width: 1%;
+  height: 10px;
+  background-color: #db1b1b;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+
+#Yellow{
+  width: 1%;
+  height: 10px;
+  background-color: #eff307;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+#Black{
+  width: 1%;
+  height: 10px;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+.text {
+  font-size: 27px;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 451px;
+  color: black;
+}
+/* container div css is here */
+.container {
+    text-align: center;
+    width: 1180px;
+    height: 1180px;
+    margin-left: 46px;
+}
+/* canvas main div style is here */
+.canvasMain {
+    width: 608px;
+    height: 491px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 251px;
+    margin-top: 155px;
+    border-radius: 7px;
+    border-bottom: 3px solid rgb(0 0 0 / 29%);
+    box-shadow: 1px 1px 22px 8px #b9a9a966;
+}
+/* canvas div css is here */
+#canvas {
+    margin-top: 17px;
+    margin-left: -70px;
+}
+/*canvas hover effect css is here */
+#canvas:hover{
+    cursor: crosshair;
+}
+/* ColorText style here */
+.ColorText {
+  position: absolute;
+  margin-top: -152px;
+  margin-left: 0px;
+  border-bottom: 1px solid #00000014;
+  width: 800px;
+}
+/* .colorSpan style here */
+.colorSpan {
+  margin-left: -211px;
+  color: #937f7f;
+}
+/* colorWrapper div style is here */
+.colorWrapper {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 17px 2px;
+    width: 800px;
+    height: 200px;
+    margin-left: 244px;
+    border-radius: 10px;
+    position: relative;
+}
+/* backgroundColors style */
+.backgroundColors {
+    margin-right: 62px;
+    border-radius: 9px;
+}
+/* hexColors style  */
+.hexColors {
+    background-color: #ffffff;
+    border: 1px solid #00000030;
+    height: 57px;
+    border-radius: 5px;
+    margin-right: 416px;
+    width: 544px;
+}
+/* Hex text style here */
+#HexText {
+    margin-right: 12px;
+}
+/* color div css is here */
+#color {
+    text-align: center;
+    width: 420px;
+    height: 80px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: red;
+}
+/* status div style is here */
+#status {
+    margin-right: 522px;
+    padding: 22px;
+}
+/* choose file button style is here */
+.btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin: 1em 0 1.5em 0;
+  box-shadow: 2px 1px 22px 1px #18000069;
+  width: 800px;
+  height: 143px;
+  margin-left: 244px;
+  border-radius: 7px;
+}
+/*  Ptext style css  */
+.Ptext {
+  width: 700px;
+  height: 29px;
+  margin-top: 95px;
+  margin-left: -452px;
+  font-size: 15px;
+}
+/* no-data-is-sent style */
+.no-data-is-sent {
+    color: #FC91F2;
+    padding: 5px;
+}
+/* inputContainer style here */
+.inputContainer {
+  width: 188px;
+  height: 57px;
+  margin-left: 291px;
+  margin-top: 32px;
+} 
+/* input,label button style */
+input,
+label,
+button {
+  border: none;
+  outline: none;
+}
+input[type="file"] {
+  display: none;
+}
+label, button {
+  font-size: 17px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 11px 35px;
+}
+label:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+/* Color-Picker style  here*/
+.Color-Picker {
+  box-shadow: 2px 1px 22px 1px #18000069;
+  width: 800px;
+  height: 270px;
+  margin-left: 244px;
+  border-radius: 7px;
+  margin-top: 300px;
+}
+.Color-Picker h1 {
+  text-align: left;
+  padding: 18px 20px;
+  color: #000000;
+  font-size: 33px;
+}
+.Color-Picker h3 {
+  text-align: left;
+  padding: 18px 20px;
+  color: #00000073;
+}
+.Color-Picker p {
+  text-align: left;
+  padding: 2px 20px;
+  line-height: 25px;
+}
+
+/* Media queries for responsiveness */
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+    .container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .canvasMain canvas {
+      width: 100%; /* Make the canvas responsive */
+      height: auto;
+    }
+    .colorWrapper {
+      flex-direction: column; /* Stack color boxes vertically */
+      text-align: center;
+    }
+    .backgroundColors, .hexColors {
+      margin: 10px 0; /* Add space between color boxes */
+    }
+    .btns-container {
+      text-align: center; /* Center-align buttons */
+      margin-top: 20px;
+    }
+    label[for="file"] {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* For screens smaller than 576px (e.g., smaller mobile devices) */
+  @media screen and (max-width: 575px) {
+    .text h1 {
+      font-size: 24px; /* Adjust heading font size for smaller screens */
+    }
+    .Ptext {
+      font-size: 14px; /* Adjust paragraph font size for smaller screens */
+    }
+  }
+
+
